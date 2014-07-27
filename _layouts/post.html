@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section itemscope itemtype="http://schema.org/Blog">
+
+    <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+
+
+
+        <div class="row">
+            <h2>{{ page.title }}</h2>
+            <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 columns">
+                {{ content }}
+            </div>
+            <div class="medium-4 columns">Hello</div>
+        </div>
+
+    </article>
+
+</section>

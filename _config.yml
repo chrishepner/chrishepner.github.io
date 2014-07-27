@@ -1,0 +1,12 @@
+# Site settings
+title: Chris Hepner
+email: me@chrishepner.info
+description: "Chris Hepner, software development"
+baseurl: ""
+url: "http://chrishepner.info"
+timezone: "America/Los_Angeles"
+include: ["fonts/"]
+
+# Build settings
+markdown: kramdown
+permalink: pretty

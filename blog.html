@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<section>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Posts</h2>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="medium-9 columns">
+            <ul class="posts">
+            {% for post in site.posts %}
+                <li>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="medium-3 columns">
+            <p class="rss-subscribe"><a href="{{ '/feed.xml' | prepend: site.baseurl }}"><i class="fi-rss"></i> RSS</a></p>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,72 @@
+/* line 2, ../../sass/scss/custom.scss */
+h1, h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 9, ../../sass/scss/custom.scss */
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  color: #000;
+}
+/* line 14, ../../sass/scss/custom.scss */
+h1 a {
+  color: #000;
+}
+/* line 17, ../../sass/scss/custom.scss */
+h1 a:hover {
+  color: #333;
+}
+
+/* line 22, ../../sass/scss/custom.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 26, ../../sass/scss/custom.scss */
+#intro p {
+  font-size: 1.125em;
+}
+
+/* line 30, ../../sass/scss/custom.scss */
+header {
+  background-color: #efefef;
+  height: 50px;
+}
+/* line 34, ../../sass/scss/custom.scss */
+header li {
+  line-height: 50px;
+  vertical-align: middle;
+}
+/* line 39, ../../sass/scss/custom.scss */
+header i {
+  color: #000;
+}
+
+/* line 45, ../../sass/scss/custom.scss */
+article h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  vertical-align: baseline;
+}
+/* line 50, ../../sass/scss/custom.scss */
+article h2 i {
+  font-size: 1.5em;
+  position: relative;
+  top: 2px;
+  color: #000;
+}
+/* line 58, ../../sass/scss/custom.scss */
+article .date {
+  position: relative;
+  bottom: 0.5em;
+  font-size: 0.75em;
+  color: #333;
+}
+/* line 64, ../../sass/scss/custom.scss */
+article .description {
+  margin-top: 0.625em;
+  margin-bottom: 1.125em;
+  font-size: 1.125em;
+}

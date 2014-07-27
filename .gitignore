@@ -1,0 +1,11 @@
+_site
+*.swp
+#SASS
+.sass-cache/
+#Bower components
+bower_components/
+
+# IntelliJ IDE cruft, keep
+# 
+**/.idea/workspace.xml
+**/.idea/tasks.xml
