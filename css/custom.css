@@ -93,7 +93,13 @@ footer p {
   vertical-align: bottom;
 }
 
-/* line 95, ../sass/custom.scss */
+/* line 93, ../sass/custom.scss */
+#comments {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 99, ../sass/custom.scss */
 .fi-rss {
   color: #ff6600;
 }

@@ -1,24 +1,59 @@
 ---
 layout: default
+comments: true
+author: Chris Hepner
+permalink: /blog/:year/:month/:day/:title
 ---
+
+
 <section itemscope itemtype="http://schema.org/Blog">
 
     <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
 
 
-
         <div class="row">
-            <h2>{{ page.title }}</h2>
-            <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <div class="large-12 columns">
+                <h2>{{ page.title }}</h2>
+                <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author}}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            </div>
         </div>
 
 
         <div class="row">
-            <div class="medium-8 columns">
+            <div class="medium-10 columns">
                 {{ content }}
             </div>
-            <div class="medium-4 columns">Hello</div>
+
+            <!-- Right sidebar -->
+            <div class="medium-2 columns">
+                {% if page.categories %}
+                <ul class="">
+
+                    {% for category in page.categories %}
+                    <li>{{ category }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
         </div>
+
+        {% if page.comments %}
+        <div class="row" id="comments">
+            <div class="large-12 columns">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    var disqus_shortname = 'chrishepner';
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+        {% endif %}
 
     </article>
 
