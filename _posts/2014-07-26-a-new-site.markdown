@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "A New Site"
+categories: jekyll
+---
+
+I have a website again!
+
+I let my previous site hosting account lapse without keeping a backup, so
+I made something new.
+ 
+This site is generated using the very fancy [Jekyll](http://jekyllrb.com/)
+and hosted on [GitHub Pages](https://pages.github.com/). The code for my
+site is hosted [here on GitHub](https://github.com/chrishepner/chrishepner.github.io/).
+
+The site uses [Zurb Foundation](http://foundation.zurb.com/) as a responsive grid framework.
+(I know it's a little bit overkill for this very simple site, but  I wanted to try it out. I'm
+not doing anything extraordinary with it, but it's very nice.)
+
+Anyway, now that I have a functional website again, I'll be updating this space more frequently.  
