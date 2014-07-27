@@ -14,7 +14,7 @@ permalink: /blog/:year/:month/:day/:title
         <div class="row">
             <div class="large-12 columns">
                 <h2>{{ page.title }}</h2>
-                <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author}}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <span rel="author">{{ page.author}}</span>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             </div>
         </div>
 
@@ -26,14 +26,17 @@ permalink: /blog/:year/:month/:day/:title
 
             <!-- Right sidebar -->
             <div class="medium-2 columns">
+
                 {% if page.categories %}
-                <ul class="">
+                <h3>Categories</h3>
+                <ul>
 
                     {% for category in page.categories %}
                     <li>{{ category }}</li>
                     {% endfor %}
                 </ul>
                 {% endif %}
+                <p class="rss-subscribe"><a href="{{ '/feed.xml' | prepend: site.baseurl }}"><i class="fi-rss"></i> RSS</a></p>
             </div>
         </div>
 
