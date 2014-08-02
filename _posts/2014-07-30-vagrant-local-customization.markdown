@@ -117,4 +117,5 @@ synced:
 {% endhighlight %}
 
 I've created a repository, "[my-lamp](https://github.com/chrishepner/my-lamp)" using this pattern. (This
-example provisions a simple LAMP stack, but the logic detailed above does not depend on PHP or Apache.)
+example provisions a simple LAMP stack, but the logic detailed above does not depend on PHP or Apache.) In [the next
+article]({% post_url 2014-08-02-vagrant-local-customization-2 %}), I'll discuss adding support for adding MySQL databases and their user accounts.
