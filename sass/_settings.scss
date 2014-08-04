@@ -172,9 +172,9 @@ $row-width: rem-calc(900);
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-// $code-color: scale-color($alert-color, $lightness: -27%);
+$code-color: inherit; // allow for pygments code highlighting
 // $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: $font-weight-bold;
+$code-font-weight: normal;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
